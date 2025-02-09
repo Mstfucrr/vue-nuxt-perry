@@ -13,6 +13,20 @@ definePageMeta({
     console.log("about middlewaressssssssssssss", to, from);
   }],
 });
+
+useHead({
+  title: "About page",
+  meta: [
+    {
+      name: "description",
+      content: "About page description",
+    },
+  ],
+  bodyAttrs: {
+    class: "my-body",
+  }
+});
+
 </script>
 
 
