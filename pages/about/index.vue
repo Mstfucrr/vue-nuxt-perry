@@ -9,8 +9,13 @@ const handleClick = (addNum?: number) => {
 
 definePageMeta({
   layout: "about",
+  middleware: [function (to, from) {
+    console.log("about middlewaressssssssssssss", to, from);
+  }],
 });
 </script>
+
+
 
 <template>
   <div>
