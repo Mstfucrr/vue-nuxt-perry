@@ -18,6 +18,11 @@ const route = useRoute();
           About
         </MyButton>
       </NuxtLink>
+      <NuxtLink to="/user">
+        <MyButton :class="route.path === '/user' && 'bg-purple-500'">
+          User
+        </MyButton>
+      </NuxtLink>
     </nav>
     <p>Some default layout content shared across all pages</p>
     <div style="border: 2px solid blue; margin: 10px; padding: 10px">
